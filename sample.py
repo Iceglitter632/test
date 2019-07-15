@@ -41,7 +41,7 @@ def callback():
 def handle_message(event):
     # 回應使用者輸入的話
     message = ImageSendMessage(
-        original_content_url = 'https://imgur.com/ZOvbIx9'
+        original_content_url = 'https://imgur.com/ZOvbIx9',
         preview_image_url ='https://imgur.com/ZOvbIx9'
     )
     line_bot_api.reply_message(event.reply_token,message)
